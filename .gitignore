@@ -1,0 +1,12 @@
+.idea
+.vscode
+
+sftp-config.json
+versions
+databases/
+tmp/
+debug.pid
+
+node_modules/
+nosqlviewer/
+nosqlviewerapp-*

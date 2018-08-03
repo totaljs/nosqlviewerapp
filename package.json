@@ -1,0 +1,27 @@
+{
+  "name": "nosqlviewerapp",
+  "version": "1.0.0",
+  "repository": "https://github.com/michalCapo/nosqlviewerapp.git",
+  "author": "Michal Capo <michal.capo@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "clean": "yarn build:clean && yarn pull:clean",
+    "copy": "cp index.js nosqlviewer/",
+    "dev": "yarn copy && electron nosqlviewer/",
+    "pull:clean": "rm -fr nosqlviewer",
+    "pull": "yarn pull:clean && git clone https://github.com/totaljs/nosqlviewer.git",
+    "build:clean": "rm -fr nosqlviewerapp-*",
+    "build:win": "rm -fr nosqlviewerapp-win* && electron-packager nosqlviewer/ --platform=win32",
+    "build:lin": "rm -fr nosqlviewerapp-linux* && electron-packager nosqlviewer/ --platform=linux",
+    "build:mac": "rm -fr nosqlviewerapp-darwin* && electron-packager nosqlviewer/ --platform=darwin",
+    "build": "yarn build:clean && yarn build:win && yarn build:lin && yarn build:mac"
+  },
+  "dependencies": {
+    "electron-window-state": "^4.1.1",
+    "total.js": "^3.0.0"
+  },
+  "devDependencies": {
+    "electron": "^3.0.0-beta.3",
+    "electron-packager": "^12.1.0"
+  }
+}
