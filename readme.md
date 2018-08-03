@@ -34,6 +34,7 @@ An electon wrapper around NoSQL embeded database viewer.
 - (c) 2018 by Peter Širka - <petersirka@gmail.com>
 - contact form <https://www.totaljs.com/contact/>
 - <info@totaljs.com>
+- Michal Capo (contributor) - <https://github.com/michalCapo> / <michal.capo@gmail.com>
 
 [license-image]: https://img.shields.io/badge/license-MIT-blue.svg?style=flat
 [license-url]: license.txt
