@@ -22,9 +22,10 @@ An electon wrapper around NoSQL embeded database viewer.
 ## I want to build electron wrapper for my OS
 
 - `yarn pull` to get newest version of nosqlviewer
-- `yarn build:lin` `yarn build:win` `yarn build:mac` to build for specific OS or `yarn build` to build it for all available OS's
+- `yarn build:lin` or `yarn build:win` or `yarn build:mac` to build for specific OS 
+-- `yarn build` to build it for all available OS's
 
-## I want to clear everythink
+## I want to clear everything
 
 - `yarn clean`
 
