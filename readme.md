@@ -23,7 +23,7 @@ An electon wrapper around NoSQL embeded database viewer.
 
 - `yarn pull` to get newest version of nosqlviewer
 - `yarn build:lin` or `yarn build:win` or `yarn build:mac` to build for specific OS 
--- `yarn build` to build it for all available OS's
+- `yarn build` to build it for all available OS's
 
 ## I want to clear everything
 
