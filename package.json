@@ -5,12 +5,16 @@
   "author": "Michal Capo <michal.capo@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "dev": "electron .",
-    "pack:clean": "rm -fr nosqlviewer-*",
-    "pack:win": "electron-packager ./ --platform=win32",
-    "pack:lin": "electron-packager ./ --platform=linux",
-    "pack:mac": "electron-packager ./ --platform=darwin",
-    "pack": "yarn pack:clean && yarn pack:win && yarn pack:lin && yarn pack:mac"
+    "clean": "yarn build:clean && yarn pull:clean",
+    "copy": "cp index.js nosqlviewer/",
+    "dev": "yarn copy && electron nosqlviewer/",
+    "pull:clean": "rm -fr nosqlviewer",
+    "pull": "yarn pull:clean && git clone https://github.com/totaljs/nosqlviewer.git",
+    "build:clean": "rm -fr nosqlviewerapp-*",
+    "build:win": "rm -fr nosqlviewerapp-win* && electron-packager nosqlviewer/ --platform=win32",
+    "build:lin": "rm -fr nosqlviewerapp-linux* && electron-packager nosqlviewer/ --platform=linux",
+    "build:mac": "rm -fr nosqlviewerapp-darwin* && electron-packager nosqlviewer/ --platform=darwin",
+    "build": "yarn build:clean && yarn build:win && yarn build:lin && yarn build:mac"
   },
   "dependencies": {
     "electron-window-state": "^4.1.1",

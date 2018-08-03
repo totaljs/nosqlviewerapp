@@ -8,4 +8,5 @@ tmp/
 debug.pid
 
 node_modules/
-nosqlviewer-*
+nosqlviewer/
+nosqlviewerapp-*

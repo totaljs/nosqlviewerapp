@@ -11,13 +11,22 @@ An electon wrapper around NoSQL embeded database viewer.
 ## Prerequest
 
 - unix system
+- `git`
 - `yarn` [https://yarnpkg.com/lang/en/]
 
-## Commands
+## I want to run it locally
 
-- `yarn dev` run in development mode
-- `yarn pack` build electron wrapper for linux, windows and mac OS
-- `yarn pack:lin` `yarn pack:win` `yarn pack:mac` build specific OS electron wrapper
+- `yarn pull` to get newest version of nosqlviewer
+- `yarn dev` to run it locally
+
+## I want to build electron wrapper for my OS
+
+- `yarn pull` to get newest version of nosqlviewer
+- `yarn build:lin` `yarn build:win` `yarn build:mac` to build for specific OS or `yarn build` to build it for all available OS's
+
+## I want to clear everythink
+
+- `yarn clean`
 
 ## Contact
 
