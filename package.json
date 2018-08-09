@@ -13,7 +13,7 @@
     "build:clean": "rm -fr nosqlviewerapp-*",
     "build:win": "rm -fr nosqlviewerapp-win* && electron-packager nosqlviewer/ --platform=win32",
     "build:lin": "rm -fr nosqlviewerapp-linux* && electron-packager nosqlviewer/ --platform=linux",
-    "build:mac": "rm -fr nosqlviewerapp-darwin* && electron-packager nosqlviewer/ --platform=darwin",
+    "build:mac": "rm -fr nosqlviewerapp-darwin* && electron-packager ./ --platform=darwin",
     "build": "yarn build:clean && yarn build:win && yarn build:lin && yarn build:mac"
   },
   "dependencies": {

@@ -22,7 +22,15 @@ An electon wrapper around NoSQL embeded database viewer.
 ## I want to build electron wrapper for my OS
 
 - `yarn pull` to get newest version of nosqlviewer
-- `yarn build:lin` or `yarn build:win` or `yarn build:mac` to build for specific OS 
+
+__for Linux or Windows__
+- `yarn build:lin` or `yarn build:win` to build for Linux or Windows
+
+__for macOS__
+- `cp -r nosqlviewer/* .`
+- `yarn build:mac`
+
+__for all OS__
 - `yarn build` to build it for all available OS's
 
 ## I want to clear everything
