@@ -23,10 +23,10 @@ An electon wrapper around NoSQL embeded database viewer.
 
 - `yarn pull` to get newest version of nosqlviewer
 
-### for Linux or Windows
+__for Linux or Windows__
 - `yarn build:lin` or `yarn build:win` to build for Linux or Windows
 
-### for macOS
+__for macOS__
 - `cp -r nosqlviewer/* .`
 - `yarn build:mac`
 
