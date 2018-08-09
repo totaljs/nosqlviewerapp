@@ -43,6 +43,7 @@ __for all OS__
 - contact form <https://www.totaljs.com/contact/>
 - <info@totaljs.com>
 - Michal Capo (contributor) - <https://github.com/michalCapo> / <michal.capo@gmail.com>
+- Teutone (contributor) - <https://github.com/Teutone> / teutone@mailbox.org
 
 [license-image]: https://img.shields.io/badge/license-MIT-blue.svg?style=flat
 [license-url]: license.txt
