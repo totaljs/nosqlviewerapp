@@ -30,6 +30,7 @@ __for macOS__
 - `cp -r nosqlviewer/* .`
 - `yarn build:mac`
 
+__for all OS__
 - `yarn build` to build it for all available OS's
 
 ## I want to clear everything
